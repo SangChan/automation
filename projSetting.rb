@@ -6,12 +6,12 @@ target = project.targets.first
 
 #Debug
 debug = target.build_configurations.first
-debug.build_settings['DEVELOPMENT_TEAM'] = ''
-debug.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+debug.build_settings['DEVELOPMENT_TEAM'] = 'teamIdNorName'
+debug.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = 'profileNameNorId'
 
 #Release 
 release = target.build_configurations.last
-release.build_settings['DEVELOPMENT_TEAM'] = ''
-release.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+release.build_settings['DEVELOPMENT_TEAM'] = 'teamIdNorName'
+release.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = 'profileNameNorId'
 
 project.save() 
